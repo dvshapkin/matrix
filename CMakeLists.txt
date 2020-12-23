@@ -1,6 +1,8 @@
 cmake_minimum_required(VERSION 3.17)
 project(matrix)
-
 set(CMAKE_CXX_STANDARD 17)
 
-add_library(matrix INTERFACE)
+enable_testing()
+
+add_subdirectory(lib)
+add_subdirectory(tests)
